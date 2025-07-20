@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <title>Univerity website design</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/eduford_img/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Certifications and online programs in 2024</h1>
+        </section>
+
+        <!----- Blog page------>
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/eduford_img/certificate.jpg">
+                    <h2>Certifications and online programs in 2024</h2>
+                    <h3>1. Foundations of Artificial Intelligence - NASSCOM</h3>
+                    <p>The Foundations of Artificial Intelligence course offered by NASSCOM provided me with a strong conceptual understanding of AI technologies. 
+                        From machine learning basics to real-world use cases, the course covered the key pillars that drive intelligent systems today. 
+                        I explored AI's impact across industries and learned how data plays a crucial role in training algorithms. 
+                        This certification strengthened my foundational knowledge and prepared me to delve deeper into AI-driven problem-solving.
+                    </p>
+                    <h3>2. Introduction to Cybersecurity - Cisco Networking Academy</h3>
+                    <p>Through Cisco's Introduction to Cybersecurity, I developed a solid grasp of cybersecurity principles and digital safety practices. 
+                        The course emphasized how data breaches occur, common vulnerabilities, and how to build a culture of cyber awareness. 
+                        I also gained exposure to tools and techniques used in defending systems from cyber threats. 
+                        This certification sparked my interest in ethical hacking and reinforced the importance of digital protection in today's interconnected world.
+                    </p>
+                    <h3>3. Programming with Python - NPTEL</h3>
+                    <p>The Programming with Python course from NPTEL allowed me to strengthen my coding skills using one of the most versatile programming languages. 
+                        I worked through hands-on exercises in functions, data structures, file handling, and error management. 
+                        The course also included algorithmic thinking and problem-solving techniques using Python. 
+                        This certification solidified my confidence in Python and improved my ability to write clean, efficient, and modular code for real-world applications.
+                    </p>
+
+                    <div class="comment-box">
+                        <h3>Leave a comment below</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter name">
+                            <input type="email" placeholder="Enter email">
+                            <textarea rows="5" placeholder="Your comment"></textarea>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="blog-right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Business Analytics</span>
+                        <span>21</span>
+                    </div>
+                        <div>
+                            <span>Data science</span>
+                            <span>28</span>
+                        </div>
+                        <div>
+                            <span>Artificial Intelligence</span>
+                            <span>26</span>
+                        </div>
+                        <div>
+                            <span>Mathematics</span>
+                            <span>17</span>
+                        </div>
+                        <div>
+                            <span>High level design</span>
+                            <span>12</span>
+                        </div>
+                        <div>
+                            <span>Mathematics</span>
+                            <span>23</span>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        
+        
+        
+       <section class="footer">
+        <h4>About Us</h4>
+        <p>Some paragraph comes here</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with  <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+       </section>
+
+
+
+
+
+
+
+        <!---------- Javascript for toggle menu ---------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+
+</html>
